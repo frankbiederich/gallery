@@ -1,8 +1,8 @@
 function link($elem, href, cl) {
   const $link = document.createElement('a');
   
+  $link.class = cl;
   $link[href] = href;
-  $link[class] = cl;
   $link[tabindex] = 0;
   
   $elem.parentNode.insertBefore($link, $elem);
