@@ -1,5 +1,5 @@
 function link($elem, href, cl) {
-  const $link = createTag('a', {
+  const $link = document.createElement('a', {
     href,
     class: cl,
     tabindex: 0,
