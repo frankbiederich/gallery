@@ -26,7 +26,6 @@ window.addEventListener('DOMContentLoaded', () => {
       $pic.remove();
     });
     
-/*    
 	const sections = Array.from(document.querySelectorAll('.gallery-wrapper'));
     const hasHeader = sections[0] && sections[0].classList.contains('hero');
     if (hasHeader) {
@@ -39,7 +38,7 @@ window.addEventListener('DOMContentLoaded', () => {
     if ($epilogSection !== $gallerySection) {
       $epilogSection.classList.add('epilog');
     }
-*/
+
     // find wall div and initialize lightgallery
     const $wall = $gallery.querySelector('.gallery > div > div');
     // remove everything but links from wall div
