@@ -21,9 +21,13 @@ window.addEventListener('DOMContentLoaded', () => {
       const fullUrl = $img.src
         .replace(/\?width\=\d+/, '?width=2000') // increase width to 2000px
         .replace(/\&crop\=\d+:\d+/,''); // remove cropping
-        $img.removeAttribute('width');
-        $img.removeAttribute('height');
-      const $thumb = link($img, fullUrl, 'thumb');
+ 
+      $img.removeAttribute('width');
+      $img.removeAttribute('height');
+      $img.setAttribute('src', `${$img.getAttribute('src').split('?')[0]}?width=264&crop=3:2&format=webply&optimize=medium`);
+     
+	  const $thumb = link($img, fullUrl,'thumb');
+	  
       $pic.parentElement.appendChild($thumb);
       $pic.remove();
     });
