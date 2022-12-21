@@ -27,7 +27,7 @@ window.addEventListener('DOMContentLoaded', () => {
     });
     
 	const sections = Array.from(document.querySelectorAll('.gallery-wrapper'));
-    const hasHeader = sections[0] && sections[0].classList.contains('hero');
+    const hasHeader = true /*sections[0] && sections[0].classList.contains('hero')*/;
     if (hasHeader) {
       // add gallery below title if header section
       sections[0].appendChild($gallery);
