@@ -14,7 +14,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   document.querySelectorAll('.gallery').forEach(($gallery) => {
     // wrap thumbnails with links to the full version
-    const $gallerySection = $gallery.closest('.gallery-wrapper');
+    const $gallerySection = $gallery.closest('.header-wrapper');
     $gallery.querySelectorAll('picture').forEach(($pic) => {
       const $img = $pic.querySelector('img');
       const fullUrl = $img.src
@@ -25,7 +25,7 @@ window.addEventListener('DOMContentLoaded', () => {
       $pic.remove();
     });
     
-    const sections = Array.from(document.querySelectorAll('.gallery-wrapper'));
+    const sections = Array.from(document.querySelectorAll('.header-wrapper'));
     const hasHeader = sections[0] && sections[0].classList.contains('hero');
     if (hasHeader) {
       // add gallery below title if header section
