@@ -25,6 +25,11 @@ main div.gallery-wall {
   gap: 20px;
 }
 
+main div.gallery-wall::after {
+  content: "";
+  flex-grow: 999;
+}
+
 .hidden {
   display: none !important;
 }
@@ -33,7 +38,7 @@ main div.gallery .thumb {
   width: 300px;
   cursor: pointer;
   position: relative;
-  flex-grow: 1;
+  flex: 1 1 auto;
 }
 
 main div.gallery .thumb > img {
