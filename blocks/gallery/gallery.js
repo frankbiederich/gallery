@@ -2,11 +2,11 @@ function link($elem, href, cl) {
   const $link = document.createElement('a');
   
   $link.href = href;
-  $link.class = cl;
+  $link.classname = cl;
   $link.tabindex = 0;
   
   $elem.parentNode.insertBefore($link, $elem);
-  $link.appendChild($elem);
+  $link.appendChild($elem);	
   return $link;
 }
 
