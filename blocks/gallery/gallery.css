@@ -21,8 +21,8 @@ main div.gallery-wall {
   margin-top: 40px;
   margin-bottom: 40px;
   display: flex;
-  flex-flow: row wrap;
-  column-gap: 20px;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .hidden {
@@ -30,16 +30,17 @@ main div.gallery-wall {
 }
 
 main div.gallery .thumb {
-  width: 132px;
-  height: 88px;
-  border: 1px solid rgba(var(--border-color), 0.2);
-  border-radius: 5px;
+  width: 300px;
   cursor: pointer;
-  margin-bottom: 20px;
+  position: relative;
 }
 
 main div.gallery .thumb > img {
-  border-radius: 5px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    border-radius: 5px;
 }
 
 .thumb:focus,
