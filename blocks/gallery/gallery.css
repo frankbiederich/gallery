@@ -35,8 +35,8 @@ main div.gallery .thumb {
 
 main div.gallery .thumb > img {
     object-fit: cover;
-    max-height: 300px;
-	max-width: auto;
+    height: 100%;
+	width: 100%;
     vertical-align: middle;
     border-radius: 5px;
 }
