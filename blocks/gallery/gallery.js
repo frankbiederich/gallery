@@ -4,6 +4,7 @@ function link($elem, href, cl) {
     class: cl,
     tabindex: 0,
   });
+  $link.href = href;
   $elem.parentNode.insertBefore($link, $elem);
   $link.appendChild($elem);
   return $link;
